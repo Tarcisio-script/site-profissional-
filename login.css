@@ -1,0 +1,127 @@
+/* Configuração do corpo da página */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.fundo-borrado {
+    position: fixed;
+    top: -10px; 
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-image: url('chocolate.jpg'); 
+    background-size: cover;
+    background-position: center;
+    
+    filter: blur(3px); 
+    
+    z-index: 1; 
+}
+.conteudo {
+    position: relative;
+    z-index: 2; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;  
+}
+.login-conteiner{
+    max-width: 900px;
+    background: #ffffff;
+    margin: 0px auto;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-style: solid;
+    border-width: 4px;
+    border-color: chocolate;
+}
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #0f0f0fdd;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: chocolate;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+.h1-login{
+    font-family: Arial, Helvetica, sans-serif;
+    color: chocolate;
+    align-items: center;
+}
+.bnt {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: chocolate;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.bnt:hover {
+    background:rgb(199, 93, 18);
+    color: rgb(255, 255, 255);
+}
+@media (max-width: 1024px) {
+    .carrosel { height: 70vh; min-height: 450px; }
+    .destaque h1 { font-size: 40px; }
+    .produtos-grade { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+    .carrosel { height: 60vh; min-height: 320px; }
+    .carrosel-seta { width: 34px; height: 34px; font-size: 16px; }
+    .seta-prev { left: 8px; }
+    .seta-next { right: 8px; }
+    .menu-navegacao { flex-direction: column; align-items: flex-start; gap: 14px; padding: 16px; }
+    .menu-navegacao .links-centro { flex-wrap: wrap; gap: 14px; }
+    .destaque { left: 20px; right: 20px; bottom: 60px; max-width: none; }
+    .destaque h1 { font-size: 28px; }
+    .miniaturas { display: none; }
+    .produtos-section { padding: 40px 20px; }
+    .produtos-grade { grid-template-columns: repeat(2, 1fr); }
+    .produtos-header { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 480px) {
+    .carrosel { height: 50vh; min-height: 220px; }
+    .carrosel-seta { width: 28px; height: 28px; font-size: 14px; }
+    .produtos-grade { grid-template-columns: 1fr; }
+}
+.lowidth{
+    height: 100vh;
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+p {
+    color: #000000;
+    text-align: center; 
+}

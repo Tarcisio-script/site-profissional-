@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="carrosel">
+    <nav class="menu-navegacao">
+        <a class="logo" href="">Chocolates</a>
+        <div class="links-centro">
+            <a href="https://www.brasilcacau.com.br/">Cacau Brasil oficial</a>
+            <a href="https://www.cacaushow.com.br/">Cacau Show oficial</a>
+            <a href="https://lacta.com.br/lacta">Lacta oficial</a>
+            <a href="https://www.lojafamilynes.com.br/">Nestlé oficial</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <div class="slides">
+        <div class="slide" id="slide1">
+            <a href="https://www.brasilcacau.com.br/" target="_blank"><img src="n1.jpg" alt="Brasil Cacau"></a>
+            <a href="#slide4" class="carrosel-seta seta-prev">&#10094;</a>
+            <a href="#slide2" class="carrosel-seta seta-next">&#10095;</a>
+        </div>
+        <div class="slide" id="slide2">
+            <a href="https://www.cacaushow.com.br/" target="_blank"><img src="n2.jpg" alt="Cacau Show"></a>
+            <a href="#slide1" class="carrosel-seta seta-prev">&#10094;</a>
+            <a href="#slide3" class="carrosel-seta seta-next">&#10095;</a>
+        </div>
+        <div class="slide" id="slide3">
+            <a href="https://lacta.com.br/lacta" target="_blank"><img src="n3.jpg" alt="Lacta"></a>
+            <a href="#slide2" class="carrosel-seta seta-prev">&#10094;</a>
+            <a href="#slide4" class="carrosel-seta seta-next">&#10095;</a>
+        </div>
+        <div class="slide" id="slide4">
+            <a href="https://www.lojafamilynes.com.br/" target="_blank"><img src="n4.jpg" alt="Nestlé"></a>
+            <a href="#slide3" class="carrosel-seta seta-prev">&#10094;</a>
+            <a href="#slide1" class="carrosel-seta seta-next">&#10095;</a>
+        </div>
+    </div>
+
+    <div class="destaque">
+        <h1>Para quem ama chocolate de verdade</h1>
+        <p>Confira as melhores marcas de chocolate do Brasil e descubra ofertas exclusivas.</p>
+        <a href="" class="botao-cta">Compre agora</a>
+    </div>
+
+    <div class="miniaturas">
+        <a href="#slide1"><img src="n1.jpg" alt="Miniatura 1"></a>
+        <a href="#slide2"><img src="n2.jpg" alt="Miniatura 2"></a>
+        <a href="#slide3"><img src="n3.jpg" alt="Miniatura 3"></a>
+        <a href="#slide4"><img src="n4.jpg" alt="Miniatura 4"></a>
+    </div>
+</div>
+
+<section class="produtos-section">
+    <div class="produtos-header">
+        <h2>Produtos em Destaque</h2>
+    </div>
+
+    <div class="produtos-grade">
+
+        <div class="produto-card">
+            <div class="produto-img-wrap">
+                <img src="produto1.jpg" alt="Bombom Dinda Brasil Cacau">
+                <span class="produto-badge">Exclusivo</span>
+            </div>
+            <div class="produto-info">
+                <span class="produto-marca">Brasil Cacau</span>
+                <h3 class="produto-nome">Bombom Dinda</h3>
+                <div class="produto-rodape">
+                    <span class="produto-preco">R$ 49,90</span>
+                    <button onclick="window.location.href='1.html' "type="button" class="btn-carrinho">Ver mais</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto-card">
+            <div class="produto-img-wrap">
+                <img src="produto2.jpg" alt="Trufa Cacau Show">
+                <span class="produto-badge">Novidade</span>
+            </div>
+            <div class="produto-info">
+                <span class="produto-marca">Cacau Show</span>
+                <h3 class="produto-nome">Trufa Sortida</h3>
+                <div class="produto-rodape">
+                    <span class="produto-preco">R$ 35,90</span>
+                    <button onclick="window.location.href='2.html' "type="button" class="btn-carrinho">Ver mais</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto-card">
+            <div class="produto-img-wrap">
+                <img src="produto3.jpg" alt="Lacta Ao Leite 80g">
+            </div>
+            <div class="produto-info">
+                <span class="produto-marca">Lacta</span>
+                <h3 class="produto-nome">Lacta Ao Leite 80g</h3>
+                <div class="produto-rodape">
+                    <span class="produto-preco">R$ 12,90</span>
+                    <button onclick="window.location.href='3.html' "type="button" class="btn-carrinho">Ver mais</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto-card">
+            <div class="produto-img-wrap">
+                <img src="produto4.jpg" alt="Kit Kat Dark">
+                <span class="produto-badge oferta">Oferta</span>
+            </div>
+            <div class="produto-info">
+                <span class="produto-marca">Nestlé</span>
+                <h3 class="produto-nome">Kit Kat Dark 45g</h3>
+                <div class="produto-rodape">
+                    <span class="produto-preco">R$ 8,50</span>
+                    <button onclick="window.location.href='4.html' "type="button" class="btn-carrinho">Ver mais</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto-card">
+            <div class="produto-img-wrap">
+                <img src="produto5.jpg" alt="Ovo de Páscoa Brasil Cacau">
+            </div>
+            <div class="produto-info">
+                <span class="produto-marca">Brasil Cacau</span>
+                <h3 class="produto-nome">Ovo de Páscoa Recheado</h3>
+                <div class="produto-rodape">
+                    <span class="produto-preco">R$ 89,90</span>
+                    <button onclick="window.location.href='5.html' "type="button" class="btn-carrinho">Ver mais</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto-card">
+            <div class="produto-img-wrap">
+                <img src="produto6.jpg" alt="Bis Xtra Black Lacta">
+                <span class="produto-badge">Top Venda</span>
+            </div>
+            <div class="produto-info">
+                <span class="produto-marca">Lacta</span>
+                <h3 class="produto-nome">Bis Xtra Black 45g</h3>
+                <div class="produto-rodape">
+                    <span class="produto-preco">R$ 15,90</span>
+                    <button onclick="window.location.href='6.html' "type="button" class="btn-carrinho">Ver mais</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto-card">
+            <div class="produto-img-wrap">
+                <img src="produto7.jpg" alt="Nescafé Gold Espresso">
+            </div>
+            <div class="produto-info">
+                <span class="produto-marca">Nestlé</span>
+                <h3 class="produto-nome">Nescafé Gold Espresso 100g</h3>
+                <div class="produto-rodape">
+                    <span class="produto-preco">R$ 38,90</span>
+                    <button onclick="window.location.href='7.html' "type="button" class="btn-carrinho">Ver mais</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto-card">
+            <div class="produto-img-wrap">
+                <img src="produto8.jpg" alt="cacaushow">
+                <span class="produto-badge oferta">-20%</span>
+            </div>
+            <div class="produto-info">
+                <span class="produto-marca">Lacta</span>
+                <h3 class="produto-nome">Bis Xtra Black 200g</h3>
+                <div class="produto-rodape">
+                    <span class="produto-preco">R$ 22,90</span>
+                <button onclick="window.location.href='8.html' "type="button" class="btn-carrinho">Ver mais</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div>
+</body>
+</html>
