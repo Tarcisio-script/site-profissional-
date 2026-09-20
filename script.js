@@ -19,5 +19,4 @@ function confirmação() {
     }
     else
         alert('Erro!, digite novamente');
-
 }
