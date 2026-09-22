@@ -1,18 +1,24 @@
-const select = document.getElementById("select-filtro");
+const selectFiltro = document.getElementById("select-filtro");
 const grade = document.querySelector(".produtos-grade");
 
-select.addEventListener("change", function () {
-    const cards = grade.querySelectorAll(".produto-card");
+selectFiltro.addEventListener("change", function () {
+    const grupos = grade.querySelectorAll(":scope > div");
 
-    if (this.value === "opcao1") {
-    
-        cards.forEach((card) => (card.style.display = "none"));
-    } else if (this.value === "opcao2") {
+    const marcas = {
+        opcao1: "nestle",
+        opcao2: "cacau-show",
+        opcao3: "lacta",
+        opcao4: "brasil-cacau",
+    };
 
-    } else if (this.value === "opcao3") {
+    const marcaEscolhida = marcas[this.value];
 
-    } else {
-
-        cards.forEach((card) => (card.style.display = ""));
-    }
+    grupos.forEach((grupo) => {
+        if (!marcaEscolhida || grupo.classList.contains(marcaEscolhida)) {
+            // sem opção selecionada (ou opção "Filtro") -> mostra tudo
+            grupo.style.display = "";
+        } else {
+            grupo.style.display = "none";
+        }
+    });
 });
