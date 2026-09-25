@@ -15,7 +15,6 @@ selectFiltro.addEventListener("change", function () {
 
     grupos.forEach((grupo) => {
         if (!marcaEscolhida || grupo.classList.contains(marcaEscolhida)) {
-            // sem opção selecionada (ou opção "Filtro") -> mostra tudo
             grupo.style.display = "";
         } else {
             grupo.style.display = "none";

@@ -1,0 +1,64 @@
+.conteiner {
+    max-width: 800px;
+    background: #ffffffbb;
+    margin: 50px auto;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.45);
+}
+button{
+
+    margin-top: 5px;
+    padding: 10px;
+    font-size:14px;
+    border-radius: 5px;
+}
+input{
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+placeholder{
+    background-color: #000000;
+}
+
+table{
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 97%;
+
+    border: 2px solid #333; 
+}
+thead{
+    color: aliceblue;
+    background-color: cornflowerblue;
+    border-color: #000000;
+}
+th{
+    border: solid #333; 
+}
+.aprovado {
+    color: green;
+}
+.Recuperação{
+    color: rgb(228, 228, 16);
+}
+.Reprovado{
+    color: red;
+}
+
+.excluir{
+    background-color: rgb(216, 1, 1);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+
+}

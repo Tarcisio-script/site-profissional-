@@ -12,10 +12,10 @@ function confirmação() {
     const senha2 = Number(senha.value);
 
     if  ((nome2 === 'adm123' || email2 === 'adm@gmail.com') && senha2 === 6767 ){
-        window.location.href = '';
+        window.location.href = 'tabela_adm.html';
     }
     else if ((nome2 === 'cliente123' || email2 === 'cliente@gmail.com') && senha2 === 6767){
-        window.location.href = '';
+        window.location.href = 'tabela_cliente.html';
     }
     else
         alert('Erro!, digite novamente');
