@@ -1,64 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #1c1210, #3b2417 60%, rgb(210, 105, 30));
+    min-height: 100vh;
+    margin: 0;
+}
+
 .conteiner {
     max-width: 800px;
-    background: #ffffffbb;
+    background: #fdfaf7ee;
     margin: 50px auto;
-    padding: 20px 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.45);
+    padding: 25px 30px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.55);
+    border-top: 5px solid rgb(210, 105, 30);
 }
-button{
 
-    margin-top: 5px;
-    padding: 10px;
-    font-size:14px;
-    border-radius: 5px;
+h2 {
+    color: rgb(210, 105, 30);
+    margin-top: 0;
+    border-bottom: 2px solid rgb(210, 105, 30);
+    padding-bottom: 10px;
 }
-input{
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 5px;
-    border: 1px solid #000000;
+
+/* ---- Formulário ---- */
+.form-cadastro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-end;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 160px;
+}
+
+.campo label {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(210, 105, 30);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+input,
+select {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #c9b8a8;
     font-size: 14px;
-    box-sizing: border-box;
-    transition: border 0.3s;
-}
-placeholder{
-    background-color: #000000;
+    background-color: #ffffff;
+    color: #2b1a12;
+    transition: border 0.25s, box-shadow 0.25s;
+    width: 100%;
 }
 
-table{
+input::placeholder {
+    color: #9c8879;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: rgb(210, 105, 30);
+    box-shadow: 0 0 0 3px rgba(210, 105, 30, 0.25);
+}
+
+input[type="file"] {
+    padding: 8px;
+    cursor: pointer;
+}
+
+button {
+    margin-top: 5px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(210, 105, 30);
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.25s, transform 0.15s;
+}
+
+button:hover {
+    background-color: #a8531a;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+#quantidade {
+    color: #3b2417;
+    margin-top: 20px;
+    font-size: 15px;
+    border-left: 4px solid rgb(210, 105, 30);
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+/* ---- Tabela ---- */
+table {
     margin-top: 15px;
-    border-radius: 5px;
-    border: 1px solid #000000;
+    border-radius: 8px;
+    overflow: hidden;
+    border-collapse: collapse;
     font-size: 14px;
-    box-sizing: border-box;
-    width: 97%;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
 
-    border: 2px solid #333; 
+thead {
+    color: #ffffff;
+    background-color: rgb(210, 105, 30);
 }
-thead{
-    color: aliceblue;
-    background-color: cornflowerblue;
-    border-color: #000000;
+
+th {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid rgb(168, 83, 26);
 }
-th{
-    border: solid #333; 
+
+td {
+    padding: 8px 10px;
+    border: 1px solid #ecd9c6;
+    color: #2b1a12;
 }
+
+tbody tr {
+    background-color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fbeee0;
+}
+
+tbody tr:hover {
+    background-color: #f4d9bd;
+}
+
 .aprovado {
     color: green;
-}
-.Recuperação{
-    color: rgb(228, 228, 16);
-}
-.Reprovado{
-    color: red;
+    font-weight: 600;
 }
 
-.excluir{
-    background-color: rgb(216, 1, 1);
+.Recuperação {
+    color: #b8860b;
+    font-weight: 600;
+}
+
+.Reprovado {
+    color: red;
+    font-weight: 600;
+}
+
+.excluir {
+    background-color: #8a1c1c;
     color: white;
     border: none;
-    padding: 5px 10px;
+    padding: 6px 12px;
     text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
 
+.excluir:hover {
+    background-color: #5e1212;
+}
+/* ---- Edição inline na tabela ---- */
+.celula-editavel {
+    cursor: text;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.celula-editavel:hover {
+    background-color: #f4e9dc;
+}
+
+.celula-editavel:focus {
+    outline: none;
+    background-color: #fff;
+    box-shadow: inset 0 0 0 2px rgb(210, 105, 30);
+}
+
+/* ---- Célula de imagem clicável ---- */
+.celula-imagem {
+    cursor: pointer;
+}
+
+.miniatura-produto {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #c9b8a8;
+    display: block;
+    margin: 0 auto;
+}
+
+.sem-imagem-label {
+    font-size: 12px;
+    color: #9c8879;
+    font-style: italic;
+}
+
+.celula-imagem:hover .sem-imagem-label {
+    color: rgb(210, 105, 30);
 }

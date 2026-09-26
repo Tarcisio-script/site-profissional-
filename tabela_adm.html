@@ -9,20 +9,34 @@
 <body>
     <div class="conteiner">
         <h2>Cadastros dos produtos</h2>
-        <input type="text" id="nome" placeholder="Nome do produto">
-        <input type="text" id="idade" placeholder="preço">
-        <input type="text" id="nota" placeholder="quantidade">
-        <select id="marcas">
-            <option>marca</option>
-            <option>nestle</option>
-            <option>cacau-show</option>
-            <option>lacta</option>
-            <option>brasil-cacau</option>
-        </select>
-        <input type="file" id="foto" name="foto do produto" accept="image/*">
-        <button type="button" id="bnt">confirmar</button>
+        <div class="form-cadastro">
+            <div class="campo">
+                <label for="nome">Nome do produto</label>
+                <input type="text" id="nome" placeholder="Barra de chocolate">
+            </div>
+            <div class="campo">
+                <label for="idade">Preço</label>
+                <input type="text" id="idade" placeholder="12,90">
+            </div>
+            <div class="campo">
+                <label for="nota">Quantidade</label>
+                <input type="text" id="nota" placeholder="10">
+            </div>
+            <div class="campo">
+                <label for="marcas">Marca</label>
+                <select id="marcas">
+                    <option>marca</option>
+                    <option>nestle</option>
+                    <option>cacau-show</option>
+                    <option>lacta</option>
+                    <option>brasil-cacau</option>
+                </select>
+            </div>
 
-<h3 id="quantidade">quantidade de produtos cadastrados: 0</h3>
+            <button type="button" id="bnt">confirmar</button>
+        </div>
+
+<h3 id="quantidade">quantidade de produtos cadastrados: 8</h3>
 
         <table id="tabelaAlunos">
         <thead>
@@ -31,14 +45,71 @@
                 <th>preço</th>
                 <th>quantidade</th>
                 <th>Marca</th>
-                <th>imagem</th>
                 <th>ação</th>
             </tr>
         </thead>
         <tbody>
-
+            <tr>
+                <td>Bombom Dinda</td>
+                <td>49,90</td>
+                <td>6</td>
+                <td>brasil-cacau</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Trufa Sortida</td>
+                <td>35,90</td>
+                <td>3</td>
+                <td>cacau-show</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Lacta Ao Leite 80g</td>
+                <td>12,90</td>
+                <td>10</td>
+                <td>lacta</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Kit Kat Dark 45g</td>
+                <td>8,50</td>
+                <td>10</td>
+                <td>nestle</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ovo de Páscoa Recheado</td>
+                <td>89,90</td>
+                <td>2</td>
+                <td>brasil-cacau</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Chocolate quente</td>
+                <td>15,90</td>
+                <td>8</td>
+                <td>cacau-show</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Nescafé Gold Espresso 100g</td>
+                <td>38,90</td>
+                <td>5</td>
+                <td>nestle</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Bis Xtra Black 45g</td>
+                <td>22,90</td>
+                <td>12</td>
+                <td>lacta</td>
+                <td></td>
+            </tr>
         </tbody>
         </table>
+        <br>
+        <h3 id="totalProdutos">total de produtos em estoque: 0</h3>
+        <h3 id="totalPreco">total em preço: R$ 0,00</h3>
     </div>
 <script src="adm.js"></script>
 </body>
